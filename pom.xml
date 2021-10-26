@@ -14,7 +14,7 @@
     <name>Bots</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>10</java.version>
         <cxf-rt-frontend-jaxws.version>3.1.6</cxf-rt-frontend-jaxws.version>
     </properties>
     <dependencies>
