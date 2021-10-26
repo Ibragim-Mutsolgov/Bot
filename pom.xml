@@ -122,28 +122,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>appassembler-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration>
-                    <assembleDirectory>target</assembleDirectory>
-                    <programs>
-                        <program>
-                            <mainClass>Bots</mainClass>
-                            <name>workerBot</name>
-                        </program>
-                    </programs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>assemble</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -161,15 +139,6 @@
                 <configuration>
                     <source>15</source>
                     <target>15</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>
