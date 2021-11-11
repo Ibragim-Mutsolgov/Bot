@@ -138,7 +138,7 @@ public class PlasmaTelegramBot extends TelegramWebhookBot {
                 //проверяем есть ли пользователь вообще в списке
                 Identification id = new Identification();
                 id.setIdInTelegram(update.getMessage().getFrom().getId().toString());
-
+                db.saveUsers(id);
                 int k = 0;
                 for(int i=0; i<db.getAllProfiles().size(); i++) {
                     if(db.getAllProfiles().get(i) == id) {
